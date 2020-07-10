@@ -190,7 +190,7 @@ export function idNumberContainsBirthDate(elevenDigits: string): boolean {
  * Get possible birth date from ID number
  * @param elevenDigits IdNumber
  */
-function possibleBirthDateOfIdNumber(elevenDigits: string): Date | undefined {
+export function possibleBirthDateOfIdNumber(elevenDigits: string): Date | undefined {
   if (elevenDigits.length !== 11) return undefined;
   const type = idNumberType(elevenDigits);
   switch (type) {
